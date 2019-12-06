@@ -1,6 +1,8 @@
-import React from 'react'
-import Todo from './Todo'
 import './todo.css'
+
+import React from 'react'
+
+import Todo from './Todo'
 
 const TodoList = props => {
   const todos = props.todos
