@@ -1,0 +1,39 @@
+.container-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-group {
+  display: flex;
+}
+
+.mark,
+.delete {
+  margin: 5px;
+  border-radius: 5px;
+  background-color: rgb(44, 39, 39);
+  color: rgb(144, 253, 149);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+
+}
+
+.marked {
+  color: black;
+  background-color: rgb(179, 247, 182);
+}
+
+.todo {
+  margin: 5px;
+  height: 25px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #20232a;
+  padding: 5px;
+  border-radius: 5px;
+  color: #20232a;
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+}
