@@ -1,8 +1,11 @@
-import React from 'react'
-import {BrowserRouter, Route, NavLink, Switch} from 'react-router-dom'
-import TodoApp from './components/TodoApp/TodoApp'
-import Home from './components/Home/Home'
 import './App.css'
+
+import React from 'react'
+import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom'
+
+import Home from './components/Home/Home'
+import TodoApp from './components/TodoApp/TodoApp'
+
 const App = () => {
   return (
     <BrowserRouter>

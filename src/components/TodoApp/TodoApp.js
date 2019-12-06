@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react'
-import TodoList from './TodoList'
+import './TodoApp.css'
+
+import axios from 'axios'
+import React, {useEffect, useState} from 'react'
+
 import AddTodo from './AddTodo'
 import Search from './Search'
-import './TodoApp.css'
-import axios from 'axios'
+import TodoList from './TodoList'
 
 const TodoApp = () => {
   const [todos, setTodos] = useState([])
