@@ -6,8 +6,16 @@ import './TodoApp.css'
 import axios from 'axios'
 
 const TodoApp = () => {
+  const userData = window.localStorage.getItem('userData')
+    ? JSON.parse(window.localStorage.getItem('userData'))
+    : {}
   const [todos, setTodos] = useState([])
   const [search, setSearch] = useState('')
+
+  axios.defaults.headers = {
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${userData.token}`,
+  }
 
   const onAddTodo = async description => {
     await axios.post('http://localhost:3000/tasks', {
